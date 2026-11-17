@@ -21,5 +21,4 @@ $articles = [
     ]
 ];
 
-
 require 'index-template.php';
