@@ -17,8 +17,9 @@ $articles = [
         'image' => 'article-example.png',
         'date_creation' => '2026-02-10',
         'categorie_libelle' => 'Design UI/UX',
-        'categorie_couleur' => 'rose'        
+        'categorie_couleur' => 'rose',       
     ]
 ];
+
 
 require 'index-template.php';
