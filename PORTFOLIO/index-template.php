@@ -51,31 +51,27 @@
             <div class="accueil-image">
                 <img src="images/cat.jpg" alt="Mon image">
             </div>
-
         </section>
 
         <section id="projets" class="section-projets">
-
             <h2>Mes projets</h2>
 
-            <p>Nombre de projets : <?= $nombreProjets ?></p>
 
-            <div class="grille-projets">
+
+            <div class="grille-projets">  
 
                 <?php foreach ($projets as $projet): ?>
 
                     <article class="carte">
 
                         <img src="<?= $projet['image'] ?>" alt="<?= $projet['titre'] ?>">
-
                         <div class="contenu">
 
                             <h3><?= $projet['titre'] ?></h3>
-
                             <p><?= $projet['description'] ?></p>
+                        
 
-                            <?php if ($projet['titre'] == "Volunteer Connect"): ?>
-
+                                <?php if($projet["titre"] == "Volunteer Connect"):?>
                                 <span>Projet principal</span>
 
                             <?php else: ?>
@@ -83,7 +79,9 @@
                                 <span>Projet personnel</span>
 
                             <?php endif; ?>
-
+                    <p>
+                            <a href="#"><?= $projet['link'] ?></a>
+                    </p>
                         </div>
 
                     </article>
@@ -91,8 +89,10 @@
                 <?php endforeach; ?>
 
             </div>
-
         </section>
+
+
+
 
         <section id="apropos" class="apropos">
 
