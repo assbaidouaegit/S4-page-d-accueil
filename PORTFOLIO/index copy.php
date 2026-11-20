@@ -56,7 +56,7 @@
             <h2>Mes projets</h2>
 
             <div class="grille-projets">
-                <?php foreach = ($projets s $projet) : ?>
+                <?php foreach  ($projets as $projet) : ?>
 
                 <article class="carte">
 
